@@ -28,7 +28,7 @@
 	border: none;
 	font-size: 18px;
 	padding: 15px 0px;
-	border-radius: 30%;
+	background-color: rgb(149, 183, 245);
 	margin-bottom: 25px;
 }
 #login-form input:not([type="submit"]) {
