@@ -11,12 +11,24 @@
 .welcome-header__title {
 	margin-bottom: 30px;
 	font-size: 25px;
+	animation: welcome 2s ease-in-out infinite;
 }
 .welcome-header__text {
 	letter-spacing: 1px;
 	width: 60%;
 	line-height: 23px;
 	opacity: 0.6;
+}
+@keyframes welcome {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(20px);
+	}
+	to {
+		transform: translateY(0px);
+	}
 }
 
 #login-form {
@@ -27,8 +39,8 @@
 #login-form input {
 	border: none;
 	font-size: 18px;
-	padding: 15px 0px;
-	border-radius: 30%;
+	padding: 15px 10px;
+	border-radius: 10px;
 	margin-bottom: 25px;
 }
 #login-form input:not([type="submit"]) {
@@ -44,6 +56,7 @@
 
 #login-form input[type="submit"] {
 	background-color: wheat;
+
 	cursor: pointer;
 	border-radius: 10px;
 	padding: 20px 0px;
